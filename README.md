@@ -145,15 +145,6 @@ python -m streamlit run app.py
 
 ---
 
-# ☁️ Deploy on Render
-
-## Create Web Service
-
-1. Push project to GitHub
-2. Login to Render
-3. Create a New Web Service
-4. Connect GitHub repository
-
 ### Build Command
 
 ```bash
