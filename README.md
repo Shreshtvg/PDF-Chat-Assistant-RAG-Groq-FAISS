@@ -183,12 +183,6 @@ GROQ_API_KEY=YOUR_GROQ_API_KEY
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots here after deployment.
-
----
-
 # ⚠️ Notes
 
 This project currently stores:
