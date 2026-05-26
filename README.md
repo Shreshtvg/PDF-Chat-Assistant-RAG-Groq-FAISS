@@ -10,7 +10,7 @@ Upload a PDF, generate intelligent document-specific questions, and chat with th
 
 **Render Deployment URL**
 
-👉 https://your-render-url.onrender.com
+👉 https://ragpdfchatassistant.streamlit.app/
 
 
 ---
@@ -60,7 +60,6 @@ PDF-reader-with-FAISS/
 ├── db.py
 ├── rag.py
 ├── requirements.txt
-├── render.yaml
 ├── .gitignore
 │
 ├── uploads/
