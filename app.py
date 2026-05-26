@@ -18,10 +18,6 @@ from rag import (
     load_index,
 )
 
-# folders creation
-os.makedirs("uploads", exist_ok=True)
-os.makedirs("indexes", exist_ok=True)
-
 # model caching
 @st.cache_data
 def cached_document_insights(text):
@@ -30,7 +26,19 @@ def cached_document_insights(text):
 # INITIALIZATION
 load_dotenv()
 init_db()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+os.makedirs("uploads", exist_ok=True)
+os.makedirs("indexes", exist_ok=True)
+
+load_dotenv()
+
+api_key = (
+    st.secrets.get("GROQ_API_KEY")
+    or os.getenv("GROQ_API_KEY")
+)
+
+client = Groq(
+    api_key=api_key
+)
 st.set_page_config(page_title="PDF Chat", page_icon="📚", layout="wide")
 
 # SESSION STATE
